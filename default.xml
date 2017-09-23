@@ -2,6 +2,6 @@
 <manifest>
   <remote  name="origin" fetch=".." />
   <default revision="master" remote="origin" sync-s="true" sync-j="4" sync-c="true" />
-  <project path="licenses" name="test.git" />
+  <project path="licenses" name="test.git"  />
 </manifest>
 
