@@ -2,15 +2,6 @@
 <manifest>
   <remote  name="origin" fetch=".." />
   <default revision="master" remote="origin" sync-s="true" sync-j="4" sync-c="true" />
-  <project path="baseimage" name="harrow-baseimage.git" />
-  <project path="baseimage-tests" name="harrow-baseimage-tests.git" />
-  <project path="frontend" name="frontend.git" />
-  <project path="knowledge-base" name="kb.git" />
-  <project path="licenses" name="licenses.git" />
-  <project path="notes" name="notes.git" />
-  <project path="puppet" name="puppet.git" revision="development" />
-  <project path="src/bitbucket.org/api" name="api.git">
-    <linkfile src="." dest="api" />
-  </project>
-  <project path="style-guide" name="harrow-style-guide.git" />
+  <project path="licenses" name="test.git" />
 </manifest>
+
