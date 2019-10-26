@@ -1,7 +1,7 @@
 pipeline {
     agent any
     parameters {
-        choices ( choices: ["TEST", "BUILD"],
+        choice ( choices: ["TEST", "BUILD"],
                 name: 'myparam',
                 description: '')
     }
