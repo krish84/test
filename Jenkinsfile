@@ -1,6 +1,10 @@
 pipeline {
     agent any
-
+    parameters {
+        choices ( choices: ["TEST", "BUILD"],
+                name: 'myparam',
+                description: '')
+    }
     stages {
         stage('Build') {
             steps {
@@ -8,9 +12,13 @@ pipeline {
             }
         }
         stage('Test') {
+            when {
+                expression { params.myparam == 'TEST' }
+            }
             steps {
                 echo 'Testing..'
             }
+            
         }
         stage('Deploy') {
             steps {
